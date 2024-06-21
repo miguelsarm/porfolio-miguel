@@ -4,6 +4,7 @@ import NextJS from "./icons/NextJS.astro"
 import Tailwind from "./icons/Tailwind.astro"
 import Wordpress from "./icons/Wordpress.astro"
 import JavaScript from "./icons/Javascript.astro"
+import PHP from "./icons/php.astro"
 import Link from "./icons/Link.astro"
 import LinkButton from "./LinkButton.astro"
 
@@ -28,6 +29,11 @@ const TAGS = {
     class: "bg-yellow-50 text-yellow-600",
     icon: JavaScript,
   },
+  PHP: {
+      name: "PHP",
+      class: "bg-blue-200 text-black",
+      icon: PHP,
+  }
 }
 const PROJECTS = [
   {
@@ -37,7 +43,7 @@ const PROJECTS = [
     // link: "https://svgl.vercel.app/",
     // github: "https://github.com/pheralb/svgl",
     image: "/projects/kayman.webp",
-    tags: [TAGS.JAVASCRIPT ,TAGS.TAILWIND, TAGS.WORDPRESS],
+    tags: [TAGS.JAVASCRIPT ,TAGS.TAILWIND, TAGS.PHP, TAGS.WORDPRESS],
   },
   {
     title: "VACC Cookbook - Indexer of worldwide recipes",
