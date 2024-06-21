@@ -1,16 +1,17 @@
 ---
-const personalImageAlt = "Miguel Ángel"
+const personalImageAlt = "Miguel Angel"
 import Badge from "@/components/Badge.astro"
 import LinkedInIcon from "@/components/icons/LinkedIn.astro"
 import MailIcon from "@/components/icons/Mail.astro"
+import ResumeIcon from "@/components/icons/Resume.astro"
 import SocialPill from "@/components/SocialPill.astro"
 ---
 
 <div class="max-w-xl">
   <div class="flex gap-4 mb-4">
     <img
-      class="rounded-full shadow-lg size-16"
-      src="/midudev.webp"
+      class="rounded-full shadow-lg size-16 object-cover"
+      src="/miguel-photo.webp"
       alt={personalImageAlt}
     />
     <a
@@ -37,11 +38,15 @@ import SocialPill from "@/components/SocialPill.astro"
   <nav class="flex flex-wrap gap-4 mt-8">
     <SocialPill href="mailto:sarmmiguel@gmail.com">
       <MailIcon class="size-4" />
-      Contact me
+      Contact
     </SocialPill>
     <SocialPill href="https://www.linkedin.com/in/miguelsarm">
       <LinkedInIcon class="size-4" />
       LinkedIn
+    </SocialPill>
+    <SocialPill href="https://drive.google.com/file/d/1TvO1l578dssrjGKc9SmjljGN9wzaVk-8/view?usp=sharing">
+      <ResumeIcon class="size-4" />
+      Resume
     </SocialPill>
   </nav>
 </div>
